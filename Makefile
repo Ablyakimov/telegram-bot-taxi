@@ -1,4 +1,4 @@
 build:
 	docker build -t tgbottaxi .
 run:
-	docker run -d --name tgbottaxi --rm tgbottaxi
+	docker run -d -p 5001:5001 --name tgbot tgbottaxi
