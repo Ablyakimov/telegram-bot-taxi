@@ -52,9 +52,9 @@ export class TarifsUpdate {
     }
   }
 
-  // @Hears('/loadTarifs')
-  // async uploadAllTarifs(ctx: Context) {
-  //   await this.tarifsService.uploadAllTarif(testTarifs)
-  //   await ctx.reply('load tarifs complete')
-  // }
+  @Hears('/loadTarifs')
+  async uploadAllTarifs(ctx: Context) {
+    await this.tarifsService.uploadAllTarif(testTarifs)
+    await ctx.reply('load tarifs complete')
+  }
 }
